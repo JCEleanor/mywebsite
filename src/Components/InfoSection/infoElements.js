@@ -48,11 +48,10 @@ export const Column2 = styled.div`
 export const TextWrapper = styled.div`
 	max-width: 540px;
 	padding-top: 0;
-	padding-bottom: 60px;
 `;
 
 export const TopLine = styled.p`
-	${'' /* color: #01bf71; */} color: #666666;
+	color: #666666;
 	font-size: 16px;
 	line-height: 16px;
 	font-weight: 700;
@@ -78,6 +77,9 @@ export const Subtitle = styled.p`
 	font-size: 18px;
 	line-height: 24px;
 	color: ${({ darkText }) => (darkText ? '#010606' : '#fff')};
+	@media screen and (max-width: 992px) {
+		font-size: 14px;
+	}
 `;
 export const BtnWrap = styled.div`
 	display: flex;

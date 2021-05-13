@@ -1,5 +1,5 @@
 import React from 'react';
-import { Btn } from '../ButtonElement';
+import { GithubIcon, LinkedinIcon, IconWrapper, CamIcon } from '../ButtonElement';
 import {
 	InfoContainer,
 	InfoWrapper,
@@ -45,8 +45,8 @@ const InfoSection = ({
 							<TopLine>{topLine}</TopLine>
 							<Heading lightText={lightText}>{headline}</Heading>
 							<Subtitle darkText={darkText}>{description}</Subtitle>
-							{/* <BtnWrap>
-								<Btn
+							<BtnWrap>
+								{/* <Btn
 									to="home"
 									smooth={true}
 									duration={500}
@@ -58,9 +58,28 @@ const InfoSection = ({
 									dark2={dark2 ? 1 : 0}
 								>
 									{buttonLabel}
-								</Btn>
-							</BtnWrap> */}
+								</Btn> */}
+							</BtnWrap>
 						</TextWrapper>
+						<IconWrapper>
+							<a href="https://github.com/JCEleanor" target="_blank" rel="noreferrer">
+								<GithubIcon />
+							</a>
+							<a
+								href="https://www.linkedin.com/in/eleanor-chiu-4316b420b/"
+								target="_blank"
+								rel="noreferrer"
+							>
+								<LinkedinIcon />
+							</a>
+							<a
+								href="http://web.ntnu.edu.tw/~40521207l/website_main.html"
+								target="_blank"
+								rel="noreferrer"
+							>
+								<CamIcon />
+							</a>
+						</IconWrapper>
 					</Column1>
 				</InfoRow>
 			</InfoWrapper>
