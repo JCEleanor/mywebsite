@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 
 export const ProjectContainer = styled.div`
-    height: 800px;
+    height: fit-content;
+	padding-top: 20px;
+	padding-bottom: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,14 +11,11 @@ export const ProjectContainer = styled.div`
     background: #e6dec1;
 
     @media screen and (max-width: 768px) {
-		${'' /* this is for makeshift */}
-		margin-top: 300px;
-        height: 1100px;
+        ${'' /* height: 1100px; */}
 
     @media screen and (max-width: 480) {
-		${'' /* this is for makeshift */}
-		margin-top: 300px;
-        height: 1300px;
+
+        ${'' /* height: 1300px; */}
     }
 `;
 

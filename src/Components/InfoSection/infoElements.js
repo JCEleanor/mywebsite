@@ -9,6 +9,7 @@ export const InfoContainer = styled.div`
 	align-items: center;
 	${'' /* ${({ lightBg }) => (lightBg ? '#f9f9f9' : '#010606')}; */} @media screen and (max-width: 768px) {
 		padding: 100px 0;
+		height: fit-content;
 	}
 `;
 export const InfoWrapper = styled.div`
@@ -20,6 +21,7 @@ export const InfoWrapper = styled.div`
 	${'' /* margin-left: auto;
 	margin-right: auto; */} margin: auto;
 	padding: 24px;
+	padding-top: 40px;
 	justify-content: center;
 `;
 
