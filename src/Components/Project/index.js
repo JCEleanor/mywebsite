@@ -17,25 +17,27 @@ const Project = () => {
 		<ProjectContainer id="portfolio">
 			<ProjectH1>Projects</ProjectH1>
 			<ProjectWrapper>
-				<a href="https://github.com/" target="_blank">
+				<a href="https://github.com/JCEleanor/web-sraping-with-python" target="_blank" rel="noreferrer">
 					<ProjectCard>
 						<ProjectIcon src={Icon1} />
 						<ProjectH2>Python web scraping to CSV file</ProjectH2>
 						<ProjectP>Extracted data from a board game site and compiled it to csv file.</ProjectP>
 					</ProjectCard>
 				</a>
-				<a href="https://github.com/" target="_blank">
+				<a href="https://github.com/JCEleanor/watermark-generator" target="_blank" rel="noreferrer">
 					<ProjectCard>
 						<ProjectIcon src={Icon2} />
 						<ProjectH2>Watermark Maker with Python Imaging Library</ProjectH2>
-						<ProjectP>A Watermark Maker that generated customed watermark in customed position.</ProjectP>
+						<ProjectP>A Watermark Maker that generated customed watermark in a customed position.</ProjectP>
 					</ProjectCard>
 				</a>
-				<a href="https://github.com/" target="_blank">
+				<a href="https://github.com/JCEleanor/reservation-system" target="_blank" rel="noreferrer">
 					<ProjectCard>
 						<ProjectIcon src={Icon3} />
 						<ProjectH2>Reservation System with PHP and MySQL</ProjectH2>
-						<ProjectP>A reservation system that performs basic CRUD functionality.</ProjectP>
+						<ProjectP>
+							A reservation system for a fictional boardgame store that performs basic CRUD functionality.
+						</ProjectP>
 					</ProjectCard>
 				</a>
 			</ProjectWrapper>
