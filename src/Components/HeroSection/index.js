@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Video from '../../videos/video.mp4';
 
-import { Btn, Button } from '../ButtonElement';
+// import { Btn, Button } from '../ButtonElement';
 // import { NavBtnLink, NavBtn } from '../Navbar/NavbarElement';
 
 import {
@@ -31,7 +31,7 @@ const HeroSection = () => {
 			</HeroBg>
 			<HeroContent>
 				<HeroH1>Hello, I am Jing-Chun Chiu</HeroH1>
-				<HeroP>I am a web developer in Taiwan</HeroP>
+				<HeroP>I am a web developer from Taiwan</HeroP>
 				<HeroBtnWrapper>
 					{/* <Btn>
 						<a href="https://github.com/">Github</a>

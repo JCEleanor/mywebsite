@@ -21,7 +21,7 @@ const Project = () => {
 					<ProjectCard>
 						<ProjectIcon src={Icon1} />
 						<ProjectH2>Python web scraping to CSV file</ProjectH2>
-						<ProjectP>Extracted data from a board game site and compiled it to csv file.</ProjectP>
+						<ProjectP>Extracted data from a boardgame site and compiled it to csv file.</ProjectP>
 					</ProjectCard>
 				</a>
 				<a href="https://github.com/JCEleanor/watermark-generator" target="_blank" rel="noreferrer">
@@ -31,12 +31,13 @@ const Project = () => {
 						<ProjectP>A Watermark Maker that generated customed watermark in a customed position.</ProjectP>
 					</ProjectCard>
 				</a>
-				<a href="https://github.com/JCEleanor/reservation-system" target="_blank" rel="noreferrer">
+				<a href="https://github.com/JCEleanor/boardgame" target="_blank" rel="noreferrer">
 					<ProjectCard>
 						<ProjectIcon src={Icon3} />
 						<ProjectH2>Reservation System with PHP and MySQL</ProjectH2>
 						<ProjectP>
-							A reservation system for a fictional boardgame store that performs basic CRUD functionality.
+							A group project on github where I collaborated with five other contributors to build a
+							fictional boardgame website using MySQL and PHP.
 						</ProjectP>
 					</ProjectCard>
 				</a>
