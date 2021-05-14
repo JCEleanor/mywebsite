@@ -12,7 +12,7 @@ import {
 	ProjectIcon
 } from './ProjectElements';
 
-const Project = () => {
+const ProjectSection = () => {
 	return (
 		<ProjectContainer id="portfolio">
 			<ProjectH1>Projects</ProjectH1>
@@ -46,4 +46,4 @@ const Project = () => {
 	);
 };
 
-export default Project;
+export default ProjectSection;

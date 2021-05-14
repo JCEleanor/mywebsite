@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import HeroSection from '../Components/HeroSection';
-import InfoSection from '../Components/InfoSection';
-import { homeObjTwo } from '../Components/InfoSection/data';
+import AboutSection from '../Components/AboutSection';
+import { homeObjTwo } from '../Components/AboutSection/data';
 import Navbar from '../Components/Navbar';
-import Project from '../Components/Project';
+import ProjectSection from '../Components/ProjectSection';
 import Sidebar from '../Components/Sidebar';
 
 const Home = () => {
@@ -17,9 +17,8 @@ const Home = () => {
 			<Sidebar isOpen={isOpen} toggle={toggle} />
 			<Navbar toggle={toggle} />
 			<HeroSection />
-			<InfoSection {...homeObjTwo} />
-
-			<Project />
+			<AboutSection {...homeObjTwo} />
+			<ProjectSection />
 		</div>
 	);
 };

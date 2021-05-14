@@ -13,9 +13,9 @@ import {
 	BtnWrap,
 	ImgWrap,
 	Img
-} from './infoElements';
+} from './AboutElements';
 
-const InfoSection = ({
+const AboutSection = ({
 	lightBg,
 	id,
 	imgStart,
@@ -87,4 +87,4 @@ const InfoSection = ({
 	);
 };
 
-export default InfoSection;
+export default AboutSection;
