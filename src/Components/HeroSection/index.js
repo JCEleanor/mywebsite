@@ -31,7 +31,7 @@ const HeroSection = () => {
 			</HeroBg>
 			<HeroContent>
 				<HeroH1>Hello, I am Jing-Chun Chiu</HeroH1>
-				<HeroP>I am a web developer from Taiwan</HeroP>
+				<HeroP>An aspiring developer from Taiwan</HeroP>
 				<HeroBtnWrapper>
 					{/* <Btn>
 						<a href="https://github.com/">Github</a>

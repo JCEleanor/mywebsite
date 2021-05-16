@@ -15,7 +15,7 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
 	display: flex;
 	z-index: 1;
-	heigh: 860px;
+	heigh: 100%;
 	width: 100%;
 	max-width: 1100px;
 	${'' /* margin-left: auto;
@@ -38,6 +38,9 @@ export const Column1 = styled.div`
 	margin: 25px;
 	padding: 0 15px;
 	grid-area: col1;
+	@media screen and (max-width: 480px) {
+		margin: 0px;
+	}
 `;
 
 export const Column2 = styled.div`
@@ -67,7 +70,7 @@ export const Heading = styled.h1`
 	font-weight: 600;
 	color: ${({ lightText }) => (lightText ? '#f7f8fa' : '010606')};
 	@media screen and (max-width: 480px) {
-		font-size: 32px;
+		font-size: 20px;
 	}
 `;
 
