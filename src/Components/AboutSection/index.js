@@ -1,5 +1,5 @@
-import React from 'react';
-import { GithubIcon, LinkedinIcon, IconWrapper, CamIcon } from '../ButtonElement';
+import React from 'react'
+import { GithubIcon, LinkedinIcon, IconWrapper, CamIcon } from '../ButtonElement'
 import {
 	InfoContainer,
 	InfoWrapper,
@@ -13,7 +13,7 @@ import {
 	BtnWrap,
 	ImgWrap,
 	Img
-} from './AboutElements';
+} from './AboutElements'
 
 const AboutSection = ({
 	lightBg,
@@ -73,7 +73,7 @@ const AboutSection = ({
 								<LinkedinIcon />
 							</a>
 							<a
-								href="http://web.ntnu.edu.tw/~40521207l/website_main.html"
+								href="http://web.ntnu.edu.tw/~40521207l/photoblog/index.html"
 								target="_blank"
 								rel="noreferrer"
 							>
@@ -84,7 +84,7 @@ const AboutSection = ({
 				</InfoRow>
 			</InfoWrapper>
 		</InfoContainer>
-	);
-};
+	)
+}
 
-export default AboutSection;
+export default AboutSection
