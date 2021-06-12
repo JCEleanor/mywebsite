@@ -1,7 +1,17 @@
 import React, { useState } from 'react'
 import Video from '../../videos/video.mp4'
 
-import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowDown } from './HeroElements'
+import {
+	HeroContainer,
+	HeroBg,
+	VideoBg,
+	HeroContent,
+	HeroH1,
+	HeroP,
+	HeroBtnWrapper,
+	ArrowDown,
+	NavLinks
+} from './HeroElements'
 
 const HeroSection = () => {
 	const [ hover, setHover ] = useState(false)
@@ -19,7 +29,9 @@ const HeroSection = () => {
 				<HeroH1>Hello, I am Jing-Chun Chiu</HeroH1>
 				<HeroP>An aspiring developer from Taiwan</HeroP>
 				<HeroBtnWrapper>
-					<ArrowDown />
+					<NavLinks to="about" smooth={true} duration={500} spy={true} exact="true" offset={-80}>
+						<ArrowDown />
+					</NavLinks>
 				</HeroBtnWrapper>
 			</HeroContent>
 		</HeroContainer>

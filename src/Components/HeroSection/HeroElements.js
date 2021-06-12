@@ -1,6 +1,7 @@
 import styled, { keyframes } from 'styled-components'
 // import { MdKeyboardArrowRight, MdArrowForward } from 'react-icons/md';
 import { MdKeyboardArrowDown } from 'react-icons/md'
+import { Link as LinkS } from 'react-scroll'
 
 export const HeroContainer = styled.div`
 	background: #0c0c0c;
@@ -110,4 +111,8 @@ export const ArrowDown = styled(MdKeyboardArrowDown)`
   height: 50px;
   animation: ${bounce} 700ms linear infinite;
 
+`
+export const NavLinks = styled(LinkS)`
+  cursor: pointer;
+  text-decoration: none;
 `
