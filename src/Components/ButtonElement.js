@@ -1,7 +1,7 @@
 // import { Button } from 'react-scroll';
-import styled from 'styled-components';
+import styled from 'styled-components'
 // import { Link } from 'react-scroll';
-import { AiFillGithub, AiFillLinkedin, AiFillCamera } from 'react-icons/ai';
+import { AiFillGithub, AiFillLinkedin, AiFillCamera } from 'react-icons/ai'
 
 export const IconWrapper = styled.div`
 	background: transparent;
@@ -9,7 +9,7 @@ export const IconWrapper = styled.div`
 	outline: none;
 	display: flex;
 	justify-content: flex-start;
-`;
+`
 
 export const GithubIcon = styled(AiFillGithub)`
     color: #666666;
@@ -21,7 +21,7 @@ export const GithubIcon = styled(AiFillGithub)`
 		width: 40px;
         height: 40px;
 	}
-`;
+`
 
 export const LinkedinIcon = styled(AiFillLinkedin)`
     color: #666666;
@@ -34,7 +34,7 @@ export const LinkedinIcon = styled(AiFillLinkedin)`
         height: 40px;
 	}
 
-`;
+`
 
 export const CamIcon = styled(AiFillCamera)`
     color: #666666;
@@ -46,5 +46,4 @@ export const CamIcon = styled(AiFillCamera)`
 		width: 40px;
         height: 40px;
 	}
-
-`;
+`

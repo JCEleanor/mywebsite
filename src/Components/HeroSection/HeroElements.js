@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components'
 // import { MdKeyboardArrowRight, MdArrowForward } from 'react-icons/md';
-import { FaTimes } from 'react-icons/fa';
+import { MdKeyboardArrowDown } from 'react-icons/md'
 
 export const HeroContainer = styled.div`
 	background: #0c0c0c;
@@ -23,7 +23,7 @@ export const HeroContainer = styled.div`
 			linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
 		z-index: 2;
 	}
-`;
+`
 
 export const HeroBg = styled.div`
 	position: absolute;
@@ -34,7 +34,7 @@ export const HeroBg = styled.div`
 	width: 100%;
 	height: 100vh;
 	overflow: hidden;
-`;
+`
 
 export const VideoBg = styled.video`
 	width: 100%;
@@ -42,7 +42,7 @@ export const VideoBg = styled.video`
 	-o-object-fit: cover;
 	object-fit: cover;
 	background: #232a34;
-`;
+`
 
 export const HeroContent = styled.div`
 	z-index: 3;
@@ -52,7 +52,7 @@ export const HeroContent = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-`;
+`
 export const HeroH1 = styled.h1`
 	color: #fff;
 	font-size: 48px;
@@ -65,7 +65,7 @@ export const HeroH1 = styled.h1`
 	@media screen and (max-width: 480px) {
 		font-size: 32px;
 	}
-`;
+`
 export const HeroP = styled.p`
 	margin-top: 24px;
 	color: #fff;
@@ -80,24 +80,34 @@ export const HeroP = styled.p`
 	@media screen and (max-width: 480px) {
 		font-size: 18px;
 	}
-`;
+`
 export const HeroBtnWrapper = styled.div`
-	margin-top: 32px;
+	margin-top: 50px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-`;
-// export const ArrowForward = styled(MdArrowForward)`
-// margin-left: 8px;
-// font-size: 20px;
+`
 
-// `;
+export const bounce = keyframes`
 
-// export const ArrowRight = styled(MdKeyboardArrowRight)`
-// margin-left: 8px;
-// font-size: 20px;
-// `;
+0% {
+    transform:translateY(0%);
+}
 
-export const ArrowIcon = styled(FaTimes)`
-    color: #fff;
-`;
+50% {
+  transform:translateY(20%);
+}
+
+100% {
+  transform:translateY(0%);
+}
+
+`
+
+export const ArrowDown = styled(MdKeyboardArrowDown)`
+  color: white;
+  width: 50px;
+  height: 50px;
+  animation: ${bounce} 700ms linear infinite;
+
+`

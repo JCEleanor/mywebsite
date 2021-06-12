@@ -1,21 +1,3 @@
-// export const homeObjOne = {
-// 	id: 'about',
-// 	lightBg: false,
-// 	lightText: true,
-// 	lightTextDesc: true,
-// 	topLine: 'About Me',
-// 	headline: 'unlimited Transaction with zero fees',
-// 	description:
-// 		'Get Access to our exclusive app that allows you to send unlimited transactions without getting charged any fees.',
-// 	buttonLabel: 'Download CV',
-// 	imgStart: false,
-// 	img: require('../../images/svg-1.svg'),
-// 	alt: '',
-// 	dark: true,
-// 	primary: true,
-// 	darkText: false
-// };
-
 export const homeObjTwo = {
 	id: 'about',
 	lightBg: true,
@@ -32,4 +14,4 @@ export const homeObjTwo = {
 	dark: true,
 	primary: true,
 	darkText: true
-};
+}
