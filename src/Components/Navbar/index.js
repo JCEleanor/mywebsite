@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import { FaBars } from 'react-icons/fa';
-import { animateScroll as scroll } from 'react-scroll';
+import React, { useState, useEffect } from 'react'
+import { FaBars } from 'react-icons/fa'
+import { animateScroll as scroll } from 'react-scroll'
 import {
 	Nav,
 	NavbarContainer,
@@ -11,32 +11,32 @@ import {
 	NavLinks,
 	NavBtn,
 	NavBtnLink
-} from './NavbarElement';
+} from './NavbarElement'
 
 const Navbar = ({ toggle }) => {
-	const [ scrollNav, setScrollNav ] = useState(false);
+	const [ scrollNav, setScrollNav ] = useState(false)
 
 	const changeNav = () => {
 		if (window.scrollY >= 80) {
-			setScrollNav(true);
+			setScrollNav(true)
 		} else {
-			setScrollNav(false);
+			setScrollNav(false)
 		}
-	};
+	}
 
 	useEffect(() => {
-		window.addEventListener('scroll', changeNav);
-	}, []);
+		window.addEventListener('scroll', changeNav)
+	}, [])
 
 	const toggleHome = () => {
-		scroll.scrollToTop();
-	};
+		scroll.scrollToTop()
+	}
 
 	return (
 		<Nav scrollNav={scrollNav}>
 			<NavbarContainer>
 				<NavLogo to="/" onClick={toggleHome}>
-					JC
+					Jing-Chun Chiu
 				</NavLogo>
 				<MobileIcon onClick={toggle}>
 					<FaBars />
@@ -52,19 +52,13 @@ const Navbar = ({ toggle }) => {
 							Portfolio
 						</NavLinks>
 					</NavItems>
-					{/* <NavItems>
-						<NavLinks to="experience" smooth={true} duration={500} spy={true} exact="true" offset={-80}>
-							Experience
-						</NavLinks>
-					</NavItems> */}
-
 					<NavBtn>
 						<NavBtnLink to="contact">Contact</NavBtnLink>
 					</NavBtn>
 				</NavMenu>
 			</NavbarContainer>
 		</Nav>
-	);
-};
+	)
+}
 
-export default Navbar;
+export default Navbar

@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import { Link as LinkR } from 'react-router-dom';
-import { Link as LinkS } from 'react-scroll';
+import styled from 'styled-components'
+import { Link as LinkR } from 'react-router-dom'
+import { Link as LinkS } from 'react-scroll'
 
 export const Nav = styled.nav`
 	background: ${({ scrollNav }) => (scrollNav ? 'rgba(189, 189, 189, 0.6)' : 'transparent')};
@@ -17,7 +17,7 @@ export const Nav = styled.nav`
 	@media screen and (max-width: 960px) {
 		transition: 0.8s all ease;
 	}
-`;
+`
 
 export const NavbarContainer = styled.div`
 	display: felx;
@@ -27,8 +27,7 @@ export const NavbarContainer = styled.div`
 	width: 100%;
 	padding: 0 24px;
 	margin: 0 -20px;
-	${'' /* max-width: 1100px; */};
-`;
+`
 
 export const NavLogo = styled(LinkR)`
     color: #fff;
@@ -39,8 +38,13 @@ export const NavLogo = styled(LinkR)`
     align-items: center;
     margin-left: 24px;
     font-weight: bold;
-    text-decoration: none;
-`;
+	text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+    transition: text-decoration-color 500ms;
+
+	&:hover {
+		text-decoration-color: rgba(0, 0, 0, 1);
+	}
+`
 
 export const MobileIcon = styled.div`
 	display: none;
@@ -54,7 +58,7 @@ export const MobileIcon = styled.div`
 		font-size: 1.8rem;
 		cursor: pointer;
 	}
-`;
+`
 
 export const NavMenu = styled.ul`
 	display: flex;
@@ -65,9 +69,9 @@ export const NavMenu = styled.ul`
 	@media screen and (max-width: 768px) {
 		display: none;
 	}
-`;
+`
 
-export const NavItems = styled.li`height: 80px;`;
+export const NavItems = styled.li`height: 80px;`
 
 export const NavLinks = styled(LinkS)`
 	color: #fff;
@@ -84,24 +88,19 @@ export const NavLinks = styled(LinkS)`
 
 	&:hover {
 		transition: all 0.2s ease-in-out;
-		${'' /* background: #fff; */}
 		color: #060606;
 	}
-`;
+`
 export const NavBtn = styled.nav`
 	display: felx;
 	align-itemes: center;
 	@media screen and (max-width: 768px) {
 		display: none;
 	}
-`;
+`
 
 export const NavBtnLink = styled(LinkR)`
-	${'' /* border-radius: 50px;
-	background: #ffbd94;
-	color: #010606;
-	white-space: nowrap; */}
-	${'' /* padding: 10px 22px; */}
+
 	color: #fff;
 	font-size: 16px;
 	outline: none;
@@ -114,7 +113,5 @@ export const NavBtnLink = styled(LinkR)`
 	&:hover {
 		transition: all 0.2s ease-in-out;
 		color: #060606;
-		${'' /* background: #fff; */}
-		${'' /* color: #ff7354; */}
 	}
-`;
+`
