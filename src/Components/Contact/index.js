@@ -1,4 +1,5 @@
 import React from 'react'
+import Video from '../../videos/video.mp4'
 import {
 	Container,
 	FormContent,
@@ -11,6 +12,7 @@ import {
 	FormButton,
 	Icon
 } from './ContactElements'
+import { HeroContainer, HeroBg, VideoBg } from '../HeroSection/HeroElements'
 
 class ContactFrom extends React.Component {
 	handleSubmit(e) {
@@ -33,6 +35,9 @@ class ContactFrom extends React.Component {
 	render() {
 		return (
 			<Container>
+				<HeroBg>
+					<VideoBg autoPlay loop muted src={Video} type="./video/mp4" />
+				</HeroBg>
 				<FormWrap>
 					<Icon to="/">Home</Icon>
 					<FormContent>
@@ -54,29 +59,5 @@ class ContactFrom extends React.Component {
 		)
 	}
 }
-
-// const ContactFrom = () => {
-// 	return (
-// 		<Container>
-// 			<FormWrap>
-// 				<Icon to="/">Home</Icon>
-// 				<FormContent>
-// 					<Form action="#" onSubmit={this.handleSubmit}>
-// 						<FormH1>Leave a message</FormH1>
-// 						<FromLabel htmlFor="for">Your Email</FromLabel>
-// 						<FromInput type="email" required />
-
-// 						<FromLabel htmlFor="for">Name</FromLabel>
-// 						<FromInput type="text" required />
-
-// 						<FromLabel htmlFor="for">Message</FromLabel>
-// 						<FromTextArea type="text" required />
-// 						<FormButton>Send Email</FormButton>
-// 					</Form>
-// 				</FormContent>
-// 			</FormWrap>
-// 		</Container>
-// 	)
-// }
 
 export default ContactFrom

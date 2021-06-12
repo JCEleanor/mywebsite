@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 export const Container = styled.div`
 	min-height: 692px;
@@ -10,9 +10,8 @@ export const Container = styled.div`
 	top: 0;
 	z-index: 0;
 	overflow: hidden;
-	background: #e6dec1
-		${'' /* background: linear-gradient(108deg, rgba(1, 147, 86, 1) 0%, rgba(10, 201, 122, 1) 100%); */};
-`;
+	background: #e6dec1;
+`
 
 export const FormWrap = styled.div`
 	height: 100%;
@@ -23,35 +22,37 @@ export const FormWrap = styled.div`
 	@media screen and (max-width: 400px) {
 		height: 80%;
 	}
-`;
+`
 
 export const Icon = styled(Link)`
+	width: fit-content;
     margin-left: 32px;
     margin-top: 32px;
     text-decoration: none;
-    color: #fff;
     font-weight: 700;
     font-size: 32px;
+	position: relative;
+	z-index: 2;
+	color:#425F7A;
 
     @media screen and (max-width: 480px) {
         margin-left: 16px;
         margin-top: 8px;
     }
-`;
+`
 
 export const FormContent = styled.div`
 	height: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-
 	@media screen and (max-width: 480px) {
 		padding: 10px;
 	}
-`;
+`
 
 export const Form = styled.form`
-	background: #010101;
+	background: rgba(232, 226, 198, 0.4);
 	max-width: 400px;
 	height: auto;
 	width: 100%;
@@ -60,33 +61,31 @@ export const Form = styled.form`
 	margin: 0 auto;
 	padding: 80px 32px;
 	border-radius: 4px;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
-
 	@media screen and (max-width: 400px) {
 		padding: 32px 32px;
 	}
-`;
+`
 
 export const FormH1 = styled.h1`
 	margin-bottom: 40px;
-	color: #fff;
+	color: #060606;
 	font-size: 20px;
 	font-weight: 400;
 	text-align: center;
-`;
+`
 
 export const FromLabel = styled.label`
 	margin-bottom: 8px;
 	font-size: 14px;
-	color: #fff;
-`;
+	color: #060606;
+`
 
 export const FromInput = styled.input`
 	padding: 16px 16px;
 	margin-bottom: 32px;
 	border: none;
 	border-radius: 4px;
-`;
+`
 
 export const FormButton = styled.button`
 	background: #fff;
@@ -96,7 +95,7 @@ export const FormButton = styled.button`
 	color: #060606;
 	font-size: 20px;
 	cursor: pointer;
-`;
+`
 
 export const FromTextArea = styled.textarea`
 	height: 100px;
@@ -104,11 +103,11 @@ export const FromTextArea = styled.textarea`
 	margin-bottom: 32px;
 	border: none;
 	border-radius: 4px;
-`;
+`
 
 export const Text = styled.span`
 	text-align: center;
 	margin-top: 24px;
 	color: #fff;
 	font-size: 14px;
-`;
+`
