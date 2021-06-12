@@ -6,7 +6,7 @@ export const homeObjTwo = {
 	topLine: 'about me',
 	headline: 'I like problem solving.',
 	description:
-		'Ever since I decided to change my career trajectory in 2020, my life has changed. Every day I fight for the same goal and I follow through my plan. I believe "Success fuels passion more than passion fuels success," and I find my own "successfulness" through solving problems along the way.',
+		'Coming from liberal art background, I am a multidisciplinary person at heart, and am passionate about web development.',
 	// buttonLabel: 'View Project',
 	imgStart: true,
 	img: require('../../images/profile.jpg'),

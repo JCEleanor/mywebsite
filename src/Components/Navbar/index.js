@@ -36,7 +36,7 @@ const Navbar = ({ toggle }) => {
 		<Nav scrollNav={scrollNav}>
 			<NavbarContainer>
 				<NavLogo to="/" onClick={toggleHome}>
-					Jing-Chun Chiu
+					JING-CHUN CHIU
 				</NavLogo>
 				<MobileIcon onClick={toggle}>
 					<FaBars />
@@ -44,16 +44,16 @@ const Navbar = ({ toggle }) => {
 				<NavMenu>
 					<NavItems>
 						<NavLinks to="about" smooth={true} duration={500} spy={true} exact="true" offset={-80}>
-							About
+							ABOUT
 						</NavLinks>
 					</NavItems>
 					<NavItems>
 						<NavLinks to="portfolio" smooth={true} duration={500} spy={true} exact="true" offset={-80}>
-							Portfolio
+							PORTFOLIO
 						</NavLinks>
 					</NavItems>
 					<NavBtn>
-						<NavBtnLink to="contact">Contact</NavBtnLink>
+						<NavBtnLink to="contact">CONTACT</NavBtnLink>
 					</NavBtn>
 				</NavMenu>
 			</NavbarContainer>
