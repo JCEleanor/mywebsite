@@ -48,7 +48,7 @@ export const Column2 = styled.div`
 	grid-area: col2;
 `
 export const TextWrapper = styled.div`
-	max-width: 540px;
+	max-width: 850px;
 	padding-top: 0;
 `
 
@@ -74,11 +74,12 @@ export const Heading = styled.h1`
 `
 
 export const Subtitle = styled.p`
-	max-width: 440px;
+	${'' /* max-width: 650px; */} width: 100%;
 	margin-bottom: 35px;
 	font-size: 18px;
-	line-height: 24px;
-	color: ${({ darkText }) => (darkText ? '#010606' : '#fff')};
+	line-height: 30px;
+	letter-spacing: 1px;
+	color: #666666;
 	@media screen and (max-width: 992px) {
 		font-size: 14px;
 	}
@@ -89,14 +90,16 @@ export const BtnWrap = styled.div`
 `
 
 export const ImgWrap = styled.div`
-	max-width: 555px;
+	max-width: 650px;
 	height: 100%;
 	border-radius: 50%;
 `
 
 export const Img = styled.img`
 	width: 100%;
+	height: 100%;
 	margin: 0 0 10px 0;
 	padding-right: 0;
 	overflow: hidden;
+	object-fit: cover;
 `

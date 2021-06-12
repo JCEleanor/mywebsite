@@ -23,13 +23,11 @@ const AboutSection = ({
 	lightText,
 	headline,
 	darkText,
-	description,
-	buttonLabel,
+	description1,
+	description2,
+	description3,
 	img,
-	alt,
-	primary,
-	dark,
-	dark2
+	alt
 }) => {
 	return (
 		<InfoContainer lightBg={lightBg} id={id}>
@@ -44,22 +42,14 @@ const AboutSection = ({
 						<TextWrapper>
 							<TopLine>{topLine}</TopLine>
 							<Heading lightText={lightText}>{headline}</Heading>
-							<Subtitle darkText={darkText}>{description}</Subtitle>
-							<BtnWrap>
-								{/* <Btn
-									to="home"
-									smooth={true}
-									duration={500}
-									spy={true}
-									exact="true"
-									offfset={80}
-									primary={primary ? 1 : 0}
-									dark={dark ? 1 : 0}
-									dark2={dark2 ? 1 : 0}
-								>
-									{buttonLabel}
-								</Btn> */}
-							</BtnWrap>
+							<Subtitle darkText={darkText}>
+								{description1}
+								<br />
+								{description2}
+								<br />
+								{description3}
+							</Subtitle>
+							<BtnWrap />
 						</TextWrapper>
 						<IconWrapper>
 							<a href="https://github.com/JCEleanor" target="_blank" rel="noreferrer">
