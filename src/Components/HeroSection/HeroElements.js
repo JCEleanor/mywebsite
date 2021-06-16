@@ -1,5 +1,4 @@
 import styled, { keyframes } from 'styled-components'
-// import { MdKeyboardArrowRight, MdArrowForward } from 'react-icons/md';
 import { MdKeyboardArrowDown } from 'react-icons/md'
 import { Link as LinkS } from 'react-scroll'
 
@@ -9,7 +8,7 @@ export const HeroContainer = styled.div`
 	justify-content: center;
 	align-items: center;
 	padding: 0;
-	${'' /* padding: 0 30px */} height: 100vh;
+	height: 100vh;
 	position: relative;
 	z-index: 1;
 

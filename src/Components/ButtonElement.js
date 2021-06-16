@@ -5,7 +5,7 @@ import { AiFillGithub, AiFillLinkedin, AiFillCamera } from 'react-icons/ai'
 
 export const IconWrapper = styled.div`
 	background: transparent;
-	cursor: pointer;
+  margin-top: 25px;
 	outline: none;
 	display: flex;
 	justify-content: flex-start;

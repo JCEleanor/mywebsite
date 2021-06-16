@@ -1,5 +1,6 @@
 import React from 'react'
 import { GithubIcon, LinkedinIcon, IconWrapper, CamIcon } from '../ButtonElement'
+import Resume from './Resume/Resume'
 import {
 	InfoContainer,
 	InfoWrapper,
@@ -37,20 +38,6 @@ const AboutSection = ({
 						<ImgWrap>
 							<Img src={img.default} alt={alt} />
 						</ImgWrap>
-					</Column2>
-					<Column1>
-						<TextWrapper>
-							<TopLine>{topLine}</TopLine>
-							<Heading lightText={lightText}>{headline}</Heading>
-							<Subtitle darkText={darkText}>
-								{description1}
-								<br />
-								{description2}
-								<br />
-								{description3}
-							</Subtitle>
-							<BtnWrap />
-						</TextWrapper>
 						<IconWrapper>
 							<a href="https://github.com/JCEleanor" target="_blank" rel="noreferrer">
 								<GithubIcon />
@@ -70,6 +57,23 @@ const AboutSection = ({
 								<CamIcon />
 							</a>
 						</IconWrapper>
+						<Resume></Resume>
+
+					</Column2>
+					<Column1>
+						<TextWrapper>
+							<TopLine>{topLine}</TopLine>
+							<Heading lightText={lightText}>{headline}</Heading>
+							<Subtitle darkText={darkText}>
+								{description1}
+								<br />
+								{description2}
+								<br />
+								{description3}
+							</Subtitle>
+							<BtnWrap />
+						</TextWrapper>
+
 					</Column1>
 				</InfoRow>
 			</InfoWrapper>

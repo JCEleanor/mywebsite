@@ -17,7 +17,7 @@ export const InfoWrapper = styled.div`
 	z-index: 1;
 	heigh: 100%;
 	width: 100%;
-	max-width: 1100px;
+	max-width: 1200px;
 	margin: auto;
 	padding: 24px;
 	padding-top: 40px;
@@ -34,7 +34,7 @@ export const InfoRow = styled.div`
 `
 
 export const Column1 = styled.div`
-	margin: 25px;
+	margin: 0 25px;
 	padding: 0 15px;
 	grid-area: col1;
 	@media screen and (max-width: 480px) {
@@ -46,6 +46,9 @@ export const Column2 = styled.div`
 	margin-bottom: 15px;
 	padding: 0 15px;
 	grid-area: col2;
+	@media screen and (max-width: 768px) {
+		display: flex;
+	}
 `
 export const TextWrapper = styled.div`
 	max-width: 850px;
@@ -90,9 +93,10 @@ export const BtnWrap = styled.div`
 `
 
 export const ImgWrap = styled.div`
-	max-width: 650px;
-	height: 100%;
-	border-radius: 50%;
+	width: 25vw;
+	height: 25vw;
+	max-width: 400px;
+	max-height: 400px;
 `
 
 export const Img = styled.img`
