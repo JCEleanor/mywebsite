@@ -9,16 +9,12 @@ import {
 	HeroH1,
 	HeroP,
 	HeroBtnWrapper,
-	ArrowDown,
 	NavLinks
 } from './HeroElements'
 
-const HeroSection = () => {
-	const [ hover, setHover ] = useState(false)
+import {ArrowDown} from '../ButtonElement'
 
-	const onHover = () => {
-		setHover(!hover)
-	}
+const HeroSection = () => {
 
 	return (
 		<HeroContainer>

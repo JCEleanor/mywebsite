@@ -1,4 +1,5 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
+import { MdKeyboardArrowDown } from 'react-icons/md'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 
 export const IconWrapper = styled.div`
@@ -37,4 +38,26 @@ export const LinkedinIcon = styled(AiFillLinkedin)`
         height: 40px;
 	}
 
+`
+export const bounce = keyframes`
+
+0% {
+    transform:translateY(0%);
+}
+
+50% {
+  transform:translateY(20%);
+}
+
+100% {
+  transform:translateY(0%);
+}
+
+`
+
+export const ArrowDown = styled(MdKeyboardArrowDown)`
+  color: white;
+  width: 50px;
+  height: 50px;
+  animation: ${bounce} 700ms linear infinite;
 `

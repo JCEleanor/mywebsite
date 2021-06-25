@@ -14,9 +14,3 @@ export const bioText = {
 	img: require('../../images/profile.jpg'),
 	alt: ''
 }
-
-const iconHoverText = {
-	cv: 'DOWNLOAD RESUME',
-	github: 'VIEW GITHUB',
-	photography: 'MY PHOTOBLOG'
-}
