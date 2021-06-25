@@ -1,4 +1,5 @@
 import styled, { keyframes } from 'styled-components'
+import { Link as LinkS } from 'react-scroll'
 import { MdKeyboardArrowDown } from 'react-icons/md'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 
@@ -51,12 +52,15 @@ export const bounce = keyframes`
 
 100% {
   transform:translateY(0%);
-}
+}`
 
+export const NavLinks = styled(LinkS)`
+  cursor: pointer;
+  text-decoration: none;
 `
 
 export const ArrowDown = styled(MdKeyboardArrowDown)`
-  color: white;
+  color: ${({ isWhite }) => (isWhite ? '#fff' : 'rgba(189, 189, 189)')};
   width: 50px;
   height: 50px;
   animation: ${bounce} 700ms linear infinite;

@@ -1,4 +1,3 @@
-import { Link as LinkS } from 'react-scroll'
 import styled from 'styled-components'
 
 export const HeroContainer = styled.div`
@@ -87,8 +86,3 @@ export const HeroBtnWrapper = styled.div`
 	align-items: center;
 `
 
-
-export const NavLinks = styled(LinkS)`
-  cursor: pointer;
-  text-decoration: none;
-`

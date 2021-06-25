@@ -15,6 +15,8 @@ import {
 	ImgWrap,
 	Img
 } from './AboutElements'
+import { ArrowDown, NavLinks } from '../ButtonElement'
+
 
 const AboutSection = ({
 	lightBg,
@@ -71,6 +73,9 @@ const AboutSection = ({
 					</Column1>
 				</InfoRow>
 			</InfoWrapper>
+			<NavLinks style={{ position: 'absolute', bottom: '85px'}} to="portfolio" smooth={true} duration={500} spy={true} exact="true" offset={-80}>
+				<ArrowDown  isWhite={false} />
+			</NavLinks>
 		</InfoContainer>
 	)
 }

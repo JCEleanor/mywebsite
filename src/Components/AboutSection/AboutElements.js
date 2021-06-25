@@ -7,6 +7,7 @@ export const InfoContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	position: relative;
 	@media screen and (max-width: 768px) {
 		padding: 100px 0;
 		height: fit-content;
@@ -15,7 +16,6 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
 	display: flex;
 	z-index: 1;
-	heigh: 100%;
 	width: 100%;
 	max-width: 1200px;
 	margin: auto;

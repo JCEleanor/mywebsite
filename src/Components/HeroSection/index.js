@@ -1,4 +1,3 @@
-import React, { useState } from 'react'
 import Video from '../../videos/video.mp4'
 
 import {
@@ -9,10 +8,9 @@ import {
 	HeroH1,
 	HeroP,
 	HeroBtnWrapper,
-	NavLinks
 } from './HeroElements'
 
-import {ArrowDown} from '../ButtonElement'
+import {ArrowDown, NavLinks} from '../ButtonElement'
 
 const HeroSection = () => {
 
@@ -26,7 +24,7 @@ const HeroSection = () => {
 				<HeroP>An aspiring developer from Taiwan</HeroP>
 				<HeroBtnWrapper>
 					<NavLinks to="about" smooth={true} duration={500} spy={true} exact="true" offset={-80}>
-						<ArrowDown />
+						<ArrowDown isWhite={true}/>
 					</NavLinks>
 				</HeroBtnWrapper>
 			</HeroContent>
