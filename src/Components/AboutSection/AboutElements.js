@@ -28,7 +28,7 @@ export const InfoRow = styled.div`
 	display: flex;
 	margin: 20px;
 	align-item: center;
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 992px) {
 		flex-direction: column;
 	}
 `
@@ -41,13 +41,14 @@ export const Column1 = styled.div`
 		margin: 0px;
 	}
 `
-
+//image & icons
 export const Column2 = styled.div`
-	margin-bottom: 15px;
+	margin: 0 25px;
 	padding: 0 15px;
 	grid-area: col2;
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 992px) {
 		display: flex;
+		margin-bottom: 20px;
 	}
 `
 export const TextWrapper = styled.div`

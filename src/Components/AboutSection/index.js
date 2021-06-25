@@ -1,5 +1,5 @@
 import React from 'react'
-import { GithubIcon, LinkedinIcon, IconWrapper, CamIcon } from '../ButtonElement'
+import { GithubIcon, LinkedinIcon, IconWrapper } from '../ButtonElement'
 import Resume from './Resume/Resume'
 import {
 	InfoContainer,
@@ -49,15 +49,9 @@ const AboutSection = ({
 							>
 								<LinkedinIcon />
 							</a>
-							<a
-								href="http://web.ntnu.edu.tw/~40521207l/photoblog/index.html"
-								target="_blank"
-								rel="noreferrer"
-							>
-								<CamIcon />
-							</a>
+							<Resume />
 						</IconWrapper>
-						<Resume></Resume>
+
 
 					</Column2>
 					<Column1>
