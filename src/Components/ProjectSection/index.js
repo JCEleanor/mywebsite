@@ -1,7 +1,7 @@
 import React from 'react';
-import Icon1 from '../../images/svg-1.svg';
-import Icon2 from '../../images/svg-2.svg';
-import Icon3 from '../../images/svg-3.svg';
+import project1 from '../../images/projects/project1.png'
+import project2 from '../../images/projects/project2.png'
+import project3 from '../../images/projects/project3.png'
 import {
 	ProjectContainer,
 	ProjectH1,
@@ -9,7 +9,8 @@ import {
 	ProjectCard,
 	ProjectH2,
 	ProjectP,
-	ProjectIcon
+	ProjectImg,
+	ProjectImgWrapper
 } from './ProjectElements';
 
 const ProjectSection = () => {
@@ -17,27 +18,43 @@ const ProjectSection = () => {
 		<ProjectContainer id="portfolio">
 			<ProjectH1>Projects</ProjectH1>
 			<ProjectWrapper>
-				<a href="https://github.com/JCEleanor/web-sraping-with-python" target="_blank" rel="noreferrer">
+				<a href="https://github.com/JCEleanor/yelp-camp" target="_blank" rel="noreferrer">
 					<ProjectCard>
-						<ProjectIcon src={Icon1} />
-						<ProjectH2>Python web scraping to CSV file</ProjectH2>
-						<ProjectP>Extracted data from a boardgame site and compiled it to csv file.</ProjectP>
+					<ProjectImgWrapper>
+						<ProjectImg src={project1} />
+						</ProjectImgWrapper>
+						<ProjectH2>Yelp Camp</ProjectH2>
+						<ProjectP>A crowdsourcing platform for campers to post or review campgrounds.</ProjectP>
+					</ProjectCard>
+				</a>
+				<a href="https://github.com/JCEleanor/react-widgets" target="_blank" rel="noreferrer">
+					<ProjectCard>
+					<ProjectImgWrapper>
+							<ProjectImg src={project2} />
+							</ProjectImgWrapper>
+						<ProjectH2>React widgets</ProjectH2>
+						<ProjectP>An assortment of React widgets including todo list, shopping cart and infinite scroll.</ProjectP>
+					</ProjectCard>
+				</a>
+				<a href="http://web.ntnu.edu.tw/~40521207l/photoblog/index.html" target="_blank" rel="noreferrer">
+					<ProjectCard>
+						<ProjectImgWrapper>
+							<ProjectImg src={project3} />
+						</ProjectImgWrapper>
+						<ProjectH2>Photo Blog/instagram clone</ProjectH2>
+						<ProjectP>
+							My personal photo blog built with pure HTML and CSS.
+						</ProjectP>
 					</ProjectCard>
 				</a>
 				<a href="https://github.com/JCEleanor/watermark-generator" target="_blank" rel="noreferrer">
 					<ProjectCard>
-						<ProjectIcon src={Icon2} />
-						<ProjectH2>Watermark Maker with Python Imaging Library</ProjectH2>
-						<ProjectP>A Watermark Maker that generated customed watermark in a customed position.</ProjectP>
-					</ProjectCard>
-				</a>
-				<a href="https://github.com/JCEleanor/boardgame" target="_blank" rel="noreferrer">
-					<ProjectCard>
-						<ProjectIcon src={Icon3} />
-						<ProjectH2>Reservation System with PHP and MySQL</ProjectH2>
+						<ProjectImgWrapper>
+							<ProjectImg src="https://raw.githubusercontent.com/JCEleanor/watermark-generator/main/example_output/position_demo.jpg" />
+						</ProjectImgWrapper>
+						<ProjectH2>Watermark Generator</ProjectH2>
 						<ProjectP>
-							A group project on github where I collaborated with five other contributors to build a
-							fictional boardgame website using MySQL and PHP.
+						A watermark generator built with Python and Pillow.
 						</ProjectP>
 					</ProjectCard>
 				</a>
