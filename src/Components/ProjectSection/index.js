@@ -54,7 +54,7 @@ const ProjectSection = () => {
 						</ProjectImgWrapper>
 						<ProjectH2>Watermark Generator</ProjectH2>
 						<ProjectP>
-						A watermark generator built with Python and Pillow.
+						A watermark generator built with Python that allows user to print watermark in custom positions.
 						</ProjectP>
 					</ProjectCard>
 				</a>
@@ -65,7 +65,7 @@ const ProjectSection = () => {
 						</ProjectImgWrapper>
 						<ProjectH2>Reservation System</ProjectH2>
 						<ProjectP>
-						Am online Reservation system that performs CRUD functinality.
+						An online Reservation system that performs CRUD functinality.
 						</ProjectP>
 					</ProjectCard>
 				</a>
