@@ -58,6 +58,17 @@ const ProjectSection = () => {
 						</ProjectP>
 					</ProjectCard>
 				</a>
+				<a href="https://github.com/JCEleanor/watermark-generator" target="_blank" rel="noreferrer">
+					<ProjectCard>
+						<ProjectImgWrapper>
+							<ProjectImg src="https://raw.githubusercontent.com/JCEleanor/boardgame/reservations/demo/demo-1.png" />
+						</ProjectImgWrapper>
+						<ProjectH2>Reservation System</ProjectH2>
+						<ProjectP>
+						Am online Reservation system that performs CRUD functinality.
+						</ProjectP>
+					</ProjectCard>
+				</a>
 			</ProjectWrapper>
 		</ProjectContainer>
 	);
