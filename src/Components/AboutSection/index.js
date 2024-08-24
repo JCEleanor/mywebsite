@@ -1,5 +1,5 @@
 import React from 'react'
-import { GithubIcon, LinkedinIcon, IconWrapper } from '../ButtonElement'
+import { GithubIcon, LinkedinIcon, IconWrapper, GmailIcon, InstagramIcon } from '../ButtonElement'
 import Resume from './Resume/Resume'
 import {
 	InfoContainer,
@@ -9,7 +9,6 @@ import {
 	Column2,
 	TextWrapper,
 	TopLine,
-	Heading,
 	Subtitle,
 	BtnWrap,
 	ImgWrap,
@@ -23,12 +22,11 @@ const AboutSection = ({
 	id,
 	imgStart,
 	topLine,
-	lightText,
-	headline,
 	darkText,
 	description1,
 	description2,
 	description3,
+	description4,
 	img,
 	alt
 }) => {
@@ -37,10 +35,8 @@ const AboutSection = ({
 			<InfoWrapper>
 				<InfoRow imgStart={imgStart}>
 					<Column2>
-						<ImgWrap>
-							<Img src={img.default} alt={alt} />
-						</ImgWrap>
 						<IconWrapper>
+							<TopLine>{topLine}</TopLine>
 							<a href="https://github.com/JCEleanor" target="_blank" rel="noreferrer">
 								<GithubIcon />
 							</a>
@@ -48,24 +44,46 @@ const AboutSection = ({
 								href="https://www.linkedin.com/in/eleanor-chiu-4316b420b/"
 								target="_blank"
 								rel="noreferrer"
-							>
+								>
 								<LinkedinIcon />
 							</a>
-							<Resume />
+							<a
+								href="https://www.instagram.com/chunchunclimb"
+								target="_blank"
+								rel="noreferrer"
+								>
+								<InstagramIcon />
+							</a>
+							<a
+								href="mailto:crcky4826@gmail.com"
+								target="_blank"
+								rel="noreferrer"
+								>
+								<GmailIcon />
+							</a>
 						</IconWrapper>
+
+						<ImgWrap>
+							<Img src={img.default} alt={alt} />
+						</ImgWrap>
 
 
 					</Column2>
 					<Column1>
 						<TextWrapper>
-							<TopLine>{topLine}</TopLine>
-							<Heading lightText={lightText}>{headline}</Heading>
 							<Subtitle darkText={darkText}>
-								{description1}
-								<br />
-								{description2}
-								<br />
-								{description3}
+								<div style={{marginBottom: '8px'}}>
+									{description1}
+								</div>
+								<div style={{marginBottom: '8px'}}>
+									{description2}
+								</div>
+								<div style={{marginBottom: '8px'}}>
+									{description3}
+								</div>
+								<div style={{marginBottom: '8px'}}>
+									{description4}
+								</div>
 							</Subtitle>
 							<BtnWrap />
 						</TextWrapper>

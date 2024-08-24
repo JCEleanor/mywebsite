@@ -1,44 +1,80 @@
 import styled, { keyframes } from 'styled-components'
 import { Link as LinkS } from 'react-scroll'
 import { MdKeyboardArrowDown } from 'react-icons/md'
-import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
+import { AiFillGithub, AiFillLinkedin, AiFillMail, AiFillInstagram } from 'react-icons/ai'
 
 export const IconWrapper = styled.div`
 	background: transparent;
-  margin-top: 25px;
+  margin: 12px auto;
 	outline: none;
 	display: flex;
 	justify-content: flex-start;
   height: fit-content;
-  @media screen and (max-width: 992px) {
-		margin-left: 20px;
-	}
-
 `
 
 export const GithubIcon = styled(AiFillGithub)`
     color: #666666;
-    width: 50px;
+    width: 45px;
     height: 50px;
     margin-right: 10px;
     cursor: pointer;
+
     @media screen and (max-width: 992px) {
 		width: 40px;
     height: 40px;
 	}
+
+    transition: opacity 500ms;
+    &:hover {
+		  opacity: 80%;
+	  }
 `
 
 export const LinkedinIcon = styled(AiFillLinkedin)`
     color: #666666;
-    width: 50px;
+    width: 45px;
     height: 50px;
     margin-right: 10px;
     cursor: pointer;
     @media screen and (max-width: 992px) {
-		width: 40px;
-        height: 40px;
-	}
+		  width: 40px;
+      height: 40px;
+	  }
+    transition: opacity 500ms;
+    &:hover {
+		  opacity: 80%;
+	  }
+`
+export const GmailIcon = styled(AiFillMail)`
+    color: #666666;
+    width: 45px;
+    height: 50px;
+    margin-right: 10px;
+    cursor: pointer;
+    @media screen and (max-width: 992px) {
+      width: 40px;
+      height: 40px;
+    }
+    transition: opacity 500ms;
+    &:hover {
+		  opacity: 80%;
+	  }
+`
 
+export const InstagramIcon = styled(AiFillInstagram)`
+    color: #666666;
+    width: 45px;
+    height: 50px;
+    margin-right: 10px;
+    cursor: pointer;
+    @media screen and (max-width: 992px) {
+      width: 40px;
+      height: 40px;
+    } 
+    transition: opacity 500ms;
+    &:hover {
+		  opacity: 80%;
+	  }
 `
 export const bounce = keyframes`
 

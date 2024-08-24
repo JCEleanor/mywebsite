@@ -21,7 +21,7 @@ const HeroSection = () => {
 			</HeroBg>
 			<HeroContent>
 				<HeroH1>Hello, I am Jing-Chun Chiu</HeroH1>
-				<HeroP>An aspiring developer from Taiwan</HeroP>
+				<HeroP>Software engineer based in Taiwan </HeroP>
 				<HeroBtnWrapper>
 					<NavLinks to="about" smooth={true} duration={500} spy={true} exact="true" offset={-80}>
 						<ArrowDown isWhite={true}/>
